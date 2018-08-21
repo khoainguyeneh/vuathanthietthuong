@@ -1,0 +1,321 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face {
+  font-family: 'Lato';
+  src: font-url('Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Lato !important;
+}
+
+nav {
+	a {
+		color: rgb(255, 255, 255) !important;
+	}
+  &.navbar-fix-top.scrolled {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+  }
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed !important;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  right: 0px;
+  width: 100%;
+  .navbar-brand {
+    margin: 15px;
+    padding: 4px;
+    border: 1px solid #fff;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.7s ease-in-out;
+  }
+	.navbar-collapse {
+		margin-left: 375px;
+		.nav-item {
+			margin-right: 40px;
+      font-weight: 300;
+      font-size: 20px;
+		}
+	}
+}
+
+.banner-contents, nav, .clients, .product-section {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+.banner-contents {
+	background-image: url(fire.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+  padding-top: 235px;
+  padding-bottom: 100px;
+  position: relative;
+  .banner-title, .banner-sub-title, .banner-link-button {
+  	mix-blend-mode: lighten;
+    text-align: center;
+  }
+
+  .banner-sub-title {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    line-height: 20px;
+    padding-bottom: 20px;
+    font-style: italic;
+  }
+
+	.banner-link-button {
+	  .btn-ember {
+	  	padding: 7px 15px;
+	    font-size: 16px;
+	    display: inline-block;
+	    color: #ffffff;
+	    border: 3px solid #FF7E00;
+	    background: #FF7E00;
+	    font-weight: 300;
+	    text-transform: uppercase;
+	    border-radius: 3px;
+	    transition: all 0.3s;
+	    &:hover {
+		    background: #ffffff;
+		    color: #FF7E00;
+		    text-decoration: none;
+	    }
+	  }
+	}
+
+	.banner-title {
+    letter-spacing: 6px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    line-height: 46px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+	}
+}
+
+.banner-contents:before, .clients:before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgba(0,0,0,.35);
+}
+
+.body-contents {
+  .product-section, .contact-section, .about-us-section {
+    padding: 50px;
+    .head-info {
+      color: #555555;
+      text-align: center;
+      font-family: Lato;
+
+      h3 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 0px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
+    }
+  }
+  .about-us-section {
+    .head-info {
+      p {
+        font-weight: 300;
+        &.sub-describe {
+          margin-bottom: 50px;
+          font-style: italic;
+        }
+
+        &.describe {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .items {
+      text-align: center;
+      font-weight: 300;
+      color: #555;
+
+      i {
+        font-size: 30px;
+        color: #eeedec;
+        background-color: #d65050;
+        border-radius: 999px 999px 999px 999px;
+        display: inline-block;
+        height: 90px;
+        line-height: 90px;
+        max-width: 100%;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        width: 90px;
+        word-spacing: 1px;
+        transition: all 0.1s linear;
+        &:hover {
+          color: #d65050;
+          background-color: #eeedec;
+        }
+      }
+      .col-lg-3 {
+        p {
+          font-size: 14px;
+          margin-top: 10px
+        }
+        h4 {
+          font-size: 18px;
+          font-weight: 400;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+
+  .clients {
+    height: 450px;
+    color: #555;
+    background-image: url(bench-accounting.png);
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    padding: 180px 125px;
+    position: relative;
+
+    .client-content{
+      font-size: 26px;
+      font-style: italic;
+      padding: 5px 0 20px;
+      text-align: center;
+      font-weight: 300;
+    }
+    .author {
+      text-align: right;
+    }
+
+    p {
+      mix-blend-mode: color-dodge;
+      color: #fff;
+    }
+  }
+
+  .product-section {
+    .items {
+      img {
+        width: 100%;
+        height: 350px;
+      }
+
+      .img-wrap {
+        position: relative;
+        height: 350px;
+        width: 100%;
+      }
+
+      p {
+        font-size: 20px;
+        span {
+          font-weight: 16px;
+          font-weight: 300;
+        }
+      }
+
+      .img-describe-layer {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 126, 0, 0.6);
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* transition effect. not necessary */
+        transition: opacity .2s, visibility .2s;
+      }
+
+      .img-wrap:hover .img-describe-layer {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .img-describe {
+        text-align: center;
+        transition: .2s;
+        transform: translateY(1em);
+      }
+
+      .img-wrap:hover .img-describe {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .contact-section {
+    background-color: #f7f7f7;
+    color: #555;
+    // font-weight: 300;
+
+    .info {
+      text-align: left;
+      .col-lg-4 {
+        padding-left: 65px;
+        padding-right: 65px;
+      }
+
+      p {
+        margin-left: 35px;
+        &.last-child {
+          margin-left: 45px;
+        }
+      }
+
+      i {
+        font-size: 35px;
+        color: #D45153;
+        margin-right: 15px;
+        &.fa-mobile {
+          font-size: 40px;
+        }
+      }
+
+      a {
+        font-style: oblique;
+        font-weight: 400;
+        color: #89BD4B;
+      }
+    }
+  }
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.footer {
+  padding: 10px 0 10px 0;
+  background-color: #f7f7f7;
+}
+

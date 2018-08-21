@@ -1,0 +1,121 @@
+.nav-contents
+	nav.navbar.navbar-expand-lg.navbar-fix-top
+	  a.navbar-brand[href="#"]
+	    / | Thiet Thuong
+	    | Thiết Thương
+	  button.navbar-toggler[type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"]
+	    span.navbar-toggler-icon
+	  #navbarNavAltMarkup.collapse.navbar-collapse
+	    .navbar-nav
+	      a.nav-item.nav-link.active[href="#"]
+	        | Home
+	      a.nav-item.nav-link[href="#"]
+	        / | About
+	        | Giới Thiệu
+	      a.nav-item.nav-link[href="#"]
+	        / | About
+	        | Khách Hàng
+	      a.nav-item.nav-link[href="#"]
+	        / | Products
+	        | Sản Phẩm
+	      a.nav-item.nav-link[href="#"]
+	        / | Contact
+	        | Liên Hệ
+
+.banner-contents
+  .banner-title
+    / | Worth A Thousand Words
+    | Vựa Than Thiết Thương
+  .banner-sub-title
+		/ p Sub title
+		p Chuyên Cung Cấp Than Đá, Than Củi Sỉ Lẻ
+  .banner-link-button
+    a.btn-ember[href="#"]
+      / | Learn More
+      | Liên Hệ Đặt Hàng
+.body-contents
+	.about-us-section
+		.head-info
+			h3 ABOUT US
+			p.describe A little bit of background on our fabulous company.
+			p.sub-describe Uenatis mattis non vitae augue. Nullam congue commodo lorem vitae facilisis. Suspendisse malesuada id turpis interdum dictum.Cum sociis natoque penatibus.
+		.row.items
+			.col-lg-3.wow.animated.delay-2s.slideInLeft
+				i.fa.fa-heart
+				h4 BRAND & IDENTITY
+				p Praesent faucibus nisl sit amet nulla sollicitudin pretium a sed purus. Nullam bibendum porta magna.
+			.col-lg-3.wow.animated.delay-2s.slideInLeft
+				i.fa.fa-star
+				h4 PARALLAX MOTION
+				p Praesent faucibus nisl sit amet nulla sollicitudin pretium a sed purus. Nullam bibendum porta magna.
+			.col-lg-3.wow.animated.delay-2s.slideInRight
+				i.fa.fa-sort-amount-desc
+				h4 QUALITY DESIGN
+				p Praesent faucibus nisl sit amet nulla sollicitudin pretium a sed purus. Nullam bibendum porta magna.
+			.col-lg-3.wow.animated.delay-2s.slideInRight
+				i.fa.fa-support
+				h4 EXPERT SUPPORT
+				p Praesent faucibus nisl sit amet nulla sollicitudin pretium a sed purus. Nullam bibendum porta magna.
+
+	.clients
+		/ p.client-content.wow.animated.delay-2s.slideInLeft Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat, orci in accumsan facilisis, tellus nulla tempus est, vel fermentum sem nisi et libero. Viv
+		p.client-content.wow.animated.delay-2s.slideInLeft Chúng tôi đã mua hàng tại vựa hơn 10 năm qua. Trải qua nhiều biến động thị trường nhưng đây vẫn luôn là địa chỉ cung cấp than mang lại sự tin cậy tuyệt đối của chúng tôi.
+		p.author.wow.animated.delay-2s.slideInRight ~ Client - Chuỗi Quán Nhậu Bê Thui Cầu Mống
+
+	.product-section
+		.head-info
+			h3 Products
+		.row.items
+			.col-lg-4
+				.img-wrap
+					= image_tag('than-da.png')
+					.img-describe-layer
+						p.img-describe
+							| Than Tổ Ong
+							br
+							span Đại, Trung, Tiểu
+			.col-lg-4
+				.img-wrap
+					= image_tag('than-cui.png')
+					.img-describe-layer
+							p.img-describe
+								| Than Củi
+								br
+								span Nhãn, Rừng, Xà Cừ
+			.col-lg-4
+				.img-wrap
+					= image_tag('cui-dau.png')
+					.img-describe-layer
+							p.img-describe Củi Dầu Nhóm
+
+	.contact-section
+		.head-info
+			h3 Contacts
+		.row.info
+			.col-lg-4.first-col.wow.animated.delay-2s.slideInLeft
+				.h5
+					i.fa.fa-map-marker
+					| Địa Chỉ
+				p 389/11 Lê Trọng Tấn, Phường Sơn Kỳ, Quận Tân Phú, TPHCM
+			.col-lg-4.wow.animated.delay-2s.slideIn
+				.h5
+					i.fa.fa-mobile
+					| Số Điện Thoại
+				p
+					= link_to '093 765 9191', "tel:0937659191"
+					| &nbsp-&nbsp
+					= link_to '090 853 2245', "tel: 0908532245"
+					br
+					| (Gặp hai anh chị Thiết, Thương)
+			.col-lg-4.wow.animated.delay-2s.slideInRight
+				h5
+					i.fa.fa-clock-o
+					| Làm Việc
+				p.last-child Từ 7h30 Sáng tới 6h Chiều
+
+	.map
+		iframe allowfullscreen="" frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.521773150722!2d106.61667854543778!3d10.807976811866647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be5918403a3%3A0xd51cc355b7451006!2zMzg5IEzDqiBUcuG7jW5nIFThuqVuLCBTxqFuIEvDvSwgVMOibiBQaMO6LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1534629781300" style="border:0" width="1280"
+
+.footer.text-center
+  .container
+    span.text-muted.text-center THIET THUONG © - 2018
