@@ -54,7 +54,7 @@ nav {
 }
 
 .banner-contents {
-	background-image: url(fire.jpg);
+	background-image: url(asset-path('fire.jpg'));
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 600px;
@@ -190,7 +190,7 @@ nav {
   .clients {
     height: 450px;
     color: #555;
-    background-image: url(bench-accounting.png);
+    background-image: url(asset-path('bench-accounting.png'));
     background-repeat: no-repeat;
     background-size: 100% 110%;
     padding: 180px 125px;
